@@ -1,15 +1,14 @@
 <?php
 namespace App\Controllers;
 
-use vendor\SON\Controller\Action;
+use Sumare\Controller\Action;
 
 class IndexController extends Action
 {
 	
-
-	public function index()
+	public function index($nome, $idade)
 	{
-		$alunos = array('Paulo', 'Joao', 'Lucas', 'Joana', 'Cristina');
+		$alunos = array('Paulo', 'Joao', 'Lucas', 'Joana', 'Cristina', $nome, $idade);
 
 		$this->render('index/index', ['alunos',$alunos]);
 	}
@@ -19,5 +18,4 @@ class IndexController extends Action
 		require __DIR__ .'/../Views/index/contact.phtml';
 	}
 
-	
 }

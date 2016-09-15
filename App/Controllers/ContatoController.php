@@ -1,7 +1,7 @@
 <?php
 namespace App\Controllers;
 
-use vendor\SON\Controller\Action;
+use Sumare\Controller\Action;
 
 class ContatoController extends Action
 {
